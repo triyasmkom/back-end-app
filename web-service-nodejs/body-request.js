@@ -49,7 +49,7 @@ server.listen(port, host, ()=>{
 /*
 panggil melalui cmd:
 
-curl e:application/json" http://localhost:5000 -d "{\"name\":\"Dicoding\"}"
+curl -X POST -H "Content-Type: application/json" http://localhost:5000 -d "{\"name\": \"Dimas\"}"
  */
 
 
