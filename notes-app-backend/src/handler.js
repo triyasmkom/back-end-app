@@ -114,7 +114,7 @@ const deleteNoteByIdHandler = (req, h)=>{
     const index = notes.findIndex((note) => note.id === id)
 
     if (index !== -1){
-        notes.splice(index)
+        notes.splice(index,1)
         return h.response({
             status: 'success',
             message: 'Catatan berhasil dihapus'
